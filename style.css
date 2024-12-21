@@ -1,0 +1,316 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #002b4c; /* Ocean blue background */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #005f9e; /* Dark ocean blue */
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header .nav-links li {
+  margin: 0 10px;
+}
+
+header .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .menu-toggle {
+  display: none;
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #005f9e, #002b4c);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.hero .cta-button {
+  background-color: #006fbe;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.music-library {
+  padding: 40px 20px;
+  background-color: #004477; /* Light ocean blue */
+}
+
+.music-library h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.music-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+}
+
+.card {
+  background: #005f9e;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+.card p {
+  color: #cceeff;
+}
+
+audio {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.download-btn {
+  background-color: #006fbe;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #005f9e;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header .menu-toggle {
+    display: block;
+  }
+
+  header .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #005f9e;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  header .nav-links.show {
+    display: flex;
+  }
+
+  header .nav-links li {
+    margin: 15px 0;
+    text-align: center;
+  }
+}
+
+/* Library Section Enhancements */
+.library-description {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #cceeff;
+}
+
+.music-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+}
+
+.card {
+  background: #005f9e;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+.card p {
+  color: #cceeff;
+}
+
+audio {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.download-btn {
+  background-color: #006fbe;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.download-btn:hover {
+  background-color: #005fa0;
+}
+/* Contact Section Styles */
+.contact-section {
+  padding: 40px 20px;
+  background-color: #004477; /* Light ocean blue */
+  color: #fff;
+  text-align: center;
+}
+
+.contact-description {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #cceeff;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form {
+  background: #005f9e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+}
+
+.contact-form .submit-btn {
+  background-color: #006fbe;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 5px 10px 0 0;
+  color: #cceeff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
