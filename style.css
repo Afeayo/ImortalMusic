@@ -54,7 +54,7 @@ header .menu-toggle {
   position: relative;
   text-align: center;
   padding: 80px 20px;
-  background: url('Twitter\ Header\ -\ Made\ with\ PosterMyWall.jpg') no-repeat center center/cover;
+  background: url('Musical\ Event\ Invitation\ Email\ Header\ -\ Made\ with\ PosterMyWall\ \(1\).jpg') no-repeat center center/cover;
   color: #fff;
 }
 
@@ -242,6 +242,14 @@ audio {
   color: #fff;
   text-align: center;
 }
+
+.download-info {
+  color: #008000; /* Green for success */
+  font-size: 0.9em;
+  margin-top: 8px;
+  font-style: italic;
+}
+
 
 .contact-description {
   font-size: 1.2em;
